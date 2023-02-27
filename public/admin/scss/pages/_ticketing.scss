@@ -1,0 +1,117 @@
+
+.ticket {
+    .back-image {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+    .card-body{
+		padding: 1.57rem;
+        .title{
+            display: flex;
+            align-items: center;
+            svg{
+                margin-right: 0.4rem;
+                margin-bottom: 0.5rem;
+                @include respond('laptop'){
+                    margin-right: 0.2rem;
+                }
+            }
+            h4{
+                color: #EEEEEE;
+                font-size: 1rem;
+                font-weight: 400;
+                white-space: nowrap;
+            }
+        }
+        .chart-num{
+            h2{
+                color: $white;
+                font-size: 1.75rem;
+                font-weight: 600;
+				margin-top: 0.2rem;
+              
+            }
+        }
+    }
+}
+.ticket.blue {
+    background-color: var(--primary)!important;
+}
+.ticket.secondary{
+    background-color: $secondary!important;
+}
+.ticket.pink{
+    background-color: $pink!important;
+}
+.ticket.black{
+    background-color: $main-color!important;
+}
+
+
+
+// --------table-datatable---
+.trans-info{ 
+    .icon {
+        border: 1px solid $border;
+        width: 50px;
+        height: 50px;
+        border-radius: $radius;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+.event-agenda{
+    .add-icon{
+        .add {
+            background-color: $secondary;
+            display: block;
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 0.625rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    .event{
+        padding: 0.625rem;
+        .event-date {
+            width: 3.5rem;
+            height: 3.5rem;
+            border-radius: $radius;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: $secondary;
+            margin-right: 0.625rem;
+            h4{
+                margin-bottom: 0;
+                color: $white;
+            }
+            span{
+                color: $white;
+            }
+        }
+        .event-info{
+            h6{
+                font-size: 0.938rem;
+                font-weight: 500;
+                margin-bottom: 0;
+            }
+            span{
+                font-size: 0.875rem;
+                font-weight: 400;
+            }
+        }
+    }
+}
+.student-tbl{
+	.doller{
+		text-align: right!important;
+	}
+}

@@ -1,0 +1,148 @@
+.invoice-btn {
+    height: 3rem;
+    .btn{
+        height: 100%;
+    }
+}
+tr{
+    a.tb-mail {
+        svg{
+            width: 2.25rem;
+            height: 2.25rem;
+            border-radius: 0.75rem;
+            display: block;
+            background-color: var(--rgba-primary-1);
+            color: #0869E1;
+            padding: 0.625rem;
+            margin-right: 0.625rem;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.5s;  
+			path{
+				fill:var(--primary);
+			}
+        }
+    }
+}
+.invoice-btn{
+    @include custommq($max:24.938rem){
+        margin-top: 0.625rem;
+    }
+}
+.card-box{
+    .card-box-icon{
+        width: 3rem;
+        height: 3rem;
+        position: relative;
+    }
+    .back-image {
+        position: absolute;
+    }
+}
+
+.card-box.blue {
+    .card-box-icon{
+        background-color:var(--primary);
+        border: none;
+    }
+}
+.card-box.green{
+    .card-box-icon{
+        background-color: $success;
+    }
+    .back-image{
+        svg{
+            g{
+                path{
+                    stroke :#1EBA62;
+                }
+                circle {
+                    stroke :#1EBA62;
+                }
+            }
+        }
+    }
+}
+.card-box.pink{
+    .card-box-icon{
+        background-color: $pink;
+    }
+    .back-image{
+        svg{
+            g{
+                path{
+                    stroke :#EB62D0;
+                }
+                circle {
+                    stroke :#EB62D0;
+                }
+            }
+        }
+    }
+}
+.card-box.secondary{
+    .card-box-icon{
+        background-color: $secondary;
+    }
+    .back-image{
+        svg{
+            g{
+                path{
+                    stroke :#9568FF;
+                }
+                circle {
+                    stroke :#9568FF;
+                }
+            }
+        }
+    }
+}
+
+.page-titles {
+    .input-group.search-area {
+        width: 25rem;
+        flex-direction: row-reverse;
+        margin-right: 1.25rem;
+        @include respond('phone-land'){
+            width: 15rem;
+        }
+		 @include respond('phone'){
+			display:none;
+		 }
+    }
+    .input-group-text{
+        border-right: none;
+        background-color: #f3f3f3;
+        a{
+            svg{
+                path{
+                    fill: var(--primary);
+                }
+            }
+        }
+    }
+    input.form-control {
+        border: none;
+        border-left: none;
+        background-color: #f3f3f3; 
+    }
+}
+
+div#example5_wrapper {
+    .form-check-input {
+        border-color: #C4C4C4;
+       
+    }
+}
+.full-data .dataTables_wrapper .dataTables_paginate .paginate_button.next:last-child {
+    margin: 0 0px 0 5px;
+}
+.full-data .paging_simple_numbers.dataTables_paginate{
+    @include respond('phone'){
+        margin-top: 0.625rem;
+        float: unset;
+        width: 100%;
+    }
+    
+}

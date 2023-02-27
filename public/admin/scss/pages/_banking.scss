@@ -1,0 +1,287 @@
+
+ .mothly-income{
+    margin-bottom: 1.125rem;
+    h4{
+        font-size: 1.5rem;
+        font-weight: 600;
+		margin-bottom: 1.625rem;
+		display: flex;
+		align-items: center;
+        span{
+           font-size: 0.875rem;
+           font-weight: 600;
+           color: $success;
+        }
+    }
+    span{
+        font-size: 0.938rem;
+    }
+}
+.balance_data{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.938rem;
+    .balance-icon{
+        width: 3.125rem;
+        height: 3.125rem;
+        border-radius: $radius;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0.938rem;
+    }
+    .balance-icon.income{
+        background-color: $success;
+    }
+    .balance-icon.outcome{
+        background-color: $danger;
+    }
+    .balance_info{
+        h4{
+            font-size: 1.125rem;
+            font-weight: 600;
+			margin-bottom: 0;
+        }
+    }
+}
+.your_balance{
+    .custome-tooltip {
+        .apexcharts-tooltip.apexcharts-theme-light{
+            background-color: $danger;
+        }
+    }
+}
+
+// ----lastest_transaction----
+.trans-list{
+	display:flex;
+	align-items:center;
+	img{
+		width:40px;
+		height:40px;
+		border-radius:$radius;
+		object-fit: cover;
+	}
+	h4{
+		margin-bottom:0;
+		margin-left:14px;
+		font-size: 15px;
+	}
+	
+}
+.trans-td-list{
+	.doller{
+		font-size:15px;
+		font-weight:500;
+		color:#2A353A;
+	}
+	.date{
+		color:#666666;
+	}
+	.print{
+		height:40px;
+		width:40px;
+		background-color:rgba(42,53,58,0.1);
+		line-height: 40px;
+		border-radius:$radius;
+		text-align:center;
+		margin-right: 15px;
+	}
+	td{
+		padding: 1.0855rem 1.875rem;
+	}
+	@include respond ('phone'){
+		.pe-0{
+			padding-right:0.825rem!important;
+		}
+	}
+	
+	
+}
+.trans-table{
+	&.table.shadow-hover tbody tr:hover{
+		background-color: #F3F3F3;
+		box-shadow:none;
+	}
+}
+.table-pagenation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 0.625rem;
+	padding: 0 20px;
+	
+    p{
+        margin-left: 0.475rem;
+		span{
+			color:var(--primary)!important;
+            margin: 0 0.2rem;
+		}
+    }
+    .pagination .page-item.page-indicator .page-link {
+        background-color: transparent;
+        border: none;
+        color: $body-text;
+        &:hover{
+            background-color:var(--primary);;
+        }
+    }
+}
+
+// -----Quick Payment----
+
+.quick-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.88rem 1.875rem;
+    background-color: #f3f3f3;
+    border: 1.5px solid $white;
+    border-width: 1px 0;
+    @include respond('laptop'){
+        padding: 1rem 1.175rem;
+    }
+    .quick-content{
+        display: flex;
+        align-items: center;
+       
+        @include respond('tab-land'){
+            flex-direction: row;
+        }
+        .quick_img{
+            display: block;
+            width: 3rem;
+            height: 3rem;
+            border-radius: $radius;
+            overflow: hidden;
+            margin-right: 0.625rem;
+            @include custommq($max:81.25rem){
+                margin-bottom: 0.625rem;
+            }
+            @include respond('tab-land'){
+                margin-bottom: 0;
+            }
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .user-name{
+            h6{
+                font-size: 1rem;
+				margin-bottom: 0;
+            }
+            span{
+                font-size: 0.938rem;
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+
+// --prim-card-
+.prim-card{
+    background-color:var(--primary);
+    overflow: hidden;
+    z-index: 2;
+    .number{
+        font-size: 1.25rem;
+        font-weight: 400;
+        color: $white;
+		margin-bottom: 2.563rem;
+    }
+    h4{
+        margin-bottom: 0;
+    }
+    .prim-info{
+        color: $white;
+        h4{
+            font-size: 1.125rem;
+            color: $white;
+        }
+    }
+    .master-card{
+        text-align: center;
+        h4{
+            color: $white;
+        }
+    }
+    &::before{
+        content: '';
+        background-color: rgba(255, 255, 255, 0.9);
+        position: absolute;
+        top: 58%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 23.063rem;
+        height: 23.063rem;
+        border-radius: 50%;
+        opacity: 0.14;
+     
+    }
+    &::after{
+        content: '';
+        background-color: #1EADFF;
+        position: absolute;
+		top: -27%;
+        left: 50%;
+        width: 23.063rem;
+        height: 23.063rem;
+        border-radius: 50%;
+        z-index: -1;
+    }
+}
+
+    // ------Recent Activity---
+    .recent-activity{
+        overflow: hidden;
+    }
+    .recent-info{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.8rem 1.875rem;
+       
+        @include respond('tab-land'){
+            padding: 0.8rem 1.875rem;
+        }
+        .recent-content{
+            display: flex;
+            align-items: center;
+            .recent_icon{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 3rem;
+                height: 3rem;
+                border-radius: $radius;
+                margin-right: 0.625rem;
+                background-color: var(--primary);
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .user-name{
+                h6{
+                    font-size: 1rem;
+                    margin-bottom: 0;
+                }
+                span{
+                    font-size: 0.813rem;
+                    font-weight: 400;
+                }
+            }
+        }
+        .count{
+            span{
+                font-size: 0.938rem;
+                font-weight: 500;
+                color: var(--primary);
+            }
+        }
+    }

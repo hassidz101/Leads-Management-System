@@ -1,0 +1,380 @@
+
+.bread-star {
+    margin-right: 1.625rem
+}
+.page-titles{
+	.progress {
+		height: 0.5rem;
+		width: 16.125rem;
+		background-color: var(--rgba-primary-1);
+	}
+}
+.right-title{
+	.title-content{
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		flex-wrap: wrap;
+		@include respond('phone'){
+			justify-content: flex-start;
+		}
+	}
+}
+.kanbanimg{
+	display:flex;	
+	img{
+		height:3rem;
+		width:3rem;
+		border-radius:50px;
+		object-fit:cover;
+		border:3px solid $white;
+		@include respond('phone'){
+			height:2.8rem;
+			width:2.8rem;	
+		}
+	}	
+	li{
+		margin-right: -1.563rem;	
+		span{
+			height:3rem;
+			width:3rem;
+			border-radius:50px;
+			background:var(--primary);
+			color:white;
+			line-height:40px;
+			display:block;
+			font-size:18px;
+			font-weight:600;
+			text-align:center;
+			border:3px solid $white;	
+			@include respond('phone'){
+				height:2.8rem;
+				width:2.8rem;
+				font-size:16px;
+				line-height:35px;
+			}
+		}
+	}
+	@include respond('tab-port'){
+		margin-bottom: 0.5rem;
+	}
+	@include respond('phone'){
+		margin-bottom: 0;
+	}
+}
+.invite{
+	a{
+		font-size:1rem!important
+	}
+}
+.bread-drop {
+	@include respond('tab-land'){
+		margin-bottom: 0.5rem;
+	}
+	@include respond('phone'){
+		margin-bottom: 0;
+	}
+}
+.facebook-icon{
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.12);
+	border-radius: 14px;	
+	width: 68px;
+	background: #FFFFFF;
+	height: 68px;
+	position: relative;
+	a{
+		height:47px;
+		width:47px;
+		display:block;
+		border-radius:47px;
+		line-height:47px;
+		text-align:center;
+		background: linear-gradient(209.74deg, #886CC0 4.05%, #AA5DE8 95.37%);
+		color:$white;
+		font-size:30px;
+		position:absolute;
+		top: 12px;
+		left: 12px;
+	}	
+}
+
+.flex-1{
+	flex:1;
+}
+.plus-bx{
+	a{
+		background: $white;
+		line-height: 3.125rem;
+		text-align:center;
+		display:block;
+		border-radius: $radius;
+		font-size: 0.875rem;
+		margin-bottom: 1.025rem;
+		font-weight: 400;
+		color: $main-color;
+		svg{
+			margin-right: 0.3rem;
+			margin-bottom: 0.2rem;
+		}
+	}
+	@include respond('phone'){
+		a{
+			line-height:35px;	
+		}
+	}
+}
+.sub-title{
+	color:#FFA7D7;	
+}
+.kanban-user{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 1rem;
+	flex-wrap: wrap;
+	
+	.badge.light{
+		font-size: 0.875rem;
+		font-weight: 400;
+		margin-bottom: 0.5rem;
+	} 
+
+	.users{
+		display:flex;
+		margin-bottom: 0.5rem;
+		li{
+			margin-right:-10px;
+			img{
+				border-radius: 32px;
+				height: 2rem;
+				width: 2rem;
+				border: 2px solid #fff;
+				object-fit: cover;	
+			}
+			span{
+				height: 2rem;
+				width: 2rem;
+				border-radius: 50%;
+				background: var(--primary);
+				color: white;
+				line-height: 1.75rem;
+				display: block;
+				font-size: 0.875rem;
+				font-weight: 600;
+				text-align: center;
+				border: 2px solid #fff;
+			}	
+		}	
+	}	
+}
+.bg-design{
+	background:#FFA7D7;
+}
+
+.kanban-bx {
+    display: flex;
+    width: 100%;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+	margin-bottom: 3rem;
+	.col {
+		width: 360px;
+		min-width: 360px;
+		flex-grow: unset;
+		flex-basis: unset;
+		.card {
+			height: auto;
+			cursor: all-scroll;	
+		}
+	}
+	&::-webkit-scrollbar {
+		background-color: #ECECEC;
+		width: 8px;
+		height: 8px;
+	}
+	&::-webkit-scrollbar-thumb {
+		background-color: #7e7e7e;
+		border-radius: 10px;
+	}
+}
+.kanbanPreview-bx {
+    padding: 1rem 2rem 2rem;
+	background: linear-gradient(to right,rgba(102, 102, 102,0.2) 50%, rgba(255, 255, 255, 0) 0%), linear-gradient(rgba(102, 102, 102,0.2) 50%, rgba(255, 255, 255, 0) 0%), linear-gradient(to right, rgba(102, 102, 102,0.2) 50%, rgba(255, 255, 255, 0) 0%), linear-gradient(rgba(102, 102, 102,0.2) 50%, rgba(255, 255, 255, 0) 0%);
+    background-position: top, right, bottom, left;
+    background-repeat: repeat-x, repeat-y;
+    background-size: 10px 1px, 1px 10px;
+	@include respond ('phone'){
+		padding: 1rem 1rem 1rem;
+	}
+	
+}
+
+.bread-drop {
+	@include custommq($max:86.063rem){
+		margin-bottom: 0rem;
+	}
+	@include custommq($max:35.938rem){
+		margin-bottom: 0;
+	}
+}
+.draggable.card{
+	transition:none;
+	cursor: grab;	
+	.progress{
+		height:8px;
+	}
+}
+
+
+/////message-box
+
+.chat-bx{
+	padding:12px 20px;
+	&.active{
+		background:var(--rgba-primary-1);	
+		position:relative;
+		&:before{
+			position:absolute;
+			background:var(--primary);
+			height:100%;
+			width:7px;
+			top:0;
+			left:0;
+			content:"";
+			
+		}
+	}
+}
+.chat-img{
+	img{
+		height:50px;
+		width:50px;
+		border-radius:50px;
+		margin-right:15px;
+	}	
+}
+.fillow-design{
+	a{
+		height:60px;
+		width:60px;
+		border-radius:60px;
+		text-align:center;
+		background:#3E3452;
+		display: block;
+		color: white;
+		font-size: 30px;
+		line-height: 60px;
+		
+	}	
+}
+
+
+.image-box{
+	position: relative;
+	display: inline-block;	
+	.img-1{
+		width: 58px;
+		height: 58px;	
+	}
+	span{
+		&.active1{
+			position: absolute;
+			bottom: -5px;
+			right: -5px;
+			height: 24px;
+			width: 24px;
+			background: #43DC80;
+			border: 4px solid #fff;
+			border-radius: 3rem;	
+		}	
+	}
+}	
+.message-received {
+	width: 62%;
+    text-align: left;	
+	p{
+		background: rgba(110,110,110,0.14);
+		text-align: left;
+		font-size: 14px;
+		border-radius: 0 20px 20px 20px;
+		padding: 10px 20px;
+		color: #000;
+		font-weight: 400;	
+	}
+	@include respond('phone'){
+		width:100%;	
+	}
+}
+.media{
+	display: flex;
+    align-items: flex-start;	
+}
+.message-sent{
+	width: 62%;
+    text-align: right;	
+	@include respond('phone'){
+		width:100%;	
+	}
+}
+.message-sent p {
+	background: #717579;
+    text-align: left;
+    border-radius: 20px 20px 0 20px;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;	
+}
+.group-pic{
+	margin-right: 15px;
+	img{
+		height: 25px;
+		width: 25px;
+		border-radius: 25px;
+		object-fit: cover;	
+		margin: 2px 2px;
+	}	
+}
+.type-massage{
+	.input-group{
+		textarea{
+			border:0;
+			line-height: 1.5;
+		}	
+	}	
+	.input-group-append{
+		button{
+			margin: 15px 0;
+			@include respond('phone'){
+				padding: 0px;	
+			}
+		}	
+	}
+}
+
+.chat-sidebar{
+	height:700px;
+}
+.message-tab{
+	.card-tabs .nav-tabs .nav-link{
+		padding: 12px 15px;	
+	}		
+}
+.share-tp{
+	li{
+		padding-right:1rem;
+	}
+}
+.task-status2{
+	small{
+		font-size:14px;
+	}
+}
+
+
+// .kanban-bx > div {
+//     background-image: linear-gradient(to right, black 50%, rgba(255,255,255,0) 0%),linear-gradient(to right, black 50%, rgba(255,255,255,0) 0%);
+//     background-position: top,right,bottom,left;
+//     background-size: 40px 1px,1px 40px;
+//     background-repeat: repeat-x, repeat-y;
+// }

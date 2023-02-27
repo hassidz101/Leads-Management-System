@@ -1,0 +1,27 @@
+
+
+
+.footer {
+    padding: 0.3875rem 0;
+    font-size: 0.875rem;
+    background-color:$bg-color;
+    border-top-left-radius: 1.875rem;
+    border-top-right-radius: 1.875rem;
+    margin-top: 1rem;
+    .copyright {
+        padding: 0.5375rem;
+        margin: 0;
+       
+        p {
+            text-align: center;
+            margin: 0;
+			
+        }
+
+        a{
+            color: var(--primary);
+        }
+    }
+}
+
+
